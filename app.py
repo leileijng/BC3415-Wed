@@ -16,11 +16,7 @@ def index():
 
 @app.route("/ai_agent", methods=["GET","POST"])
 def ai_agent():
-    return(render_template("ai_agent.html"))
-
-@app.route("/ai_agent_reply", methods=["GET","POST"])
-def ai_agent_reply():
-    q = request.form.get("q")
+    q = "Tell me a joke about Singapore"
     r = model.generate_content(q)
     return(render_template("ai_agent_reply.html",r=r.text))
 

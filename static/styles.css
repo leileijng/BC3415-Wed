@@ -1,78 +1,117 @@
+/* Styles for the body */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    background-image: url('https://media.giphy.com/media/YXqtzyIqaUj2070C0W/giphy.gif?cid=ecf05e47sfx2qx9jvdovkd7xadxdn5a3m20i1lquwtxz7xfa&ep=v1_gifs_related&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+/* Container styles */
 .container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    max-width: 420px;
     width: 100%;
     text-align: center;
 }
-.image-class {
-    max-width: 100%;  /* Ensures the image scales down responsively */
-    height: auto;     /* Maintains the aspect ratio of the image */
-    border-radius: 8px; /* Optional: Adds rounded corners */
-    margin-bottom: 20px; /* Adds space below the image */
-    display: block;
-}
+
+/* Header (h2) styling */
 h2 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 20px;
-    color: #333;
+    color: #6A5ACD; /* Soft purple for the title */
+    font-weight: 600;
 }
+
+/* Form and button styles */
 form {
-    margin: 15px 0;
+    margin: 20px 0;
 }
+
+/* Submit button styling */
 input[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 5px;
+    padding: 14px 26px;
     font-size: 18px;
+    border: 1px solid #6A5ACD; /* Soft purple border */
+    border-radius: 8px;
+    background-color: #6A5ACD; /* Soft purple background */
+    color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s, color 0.4s, box-shadow 0.4s;
     width: 100%;
-    max-width: 300px;
 }
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: white;
+    color: #6A5ACD;
+    box-shadow: 0 4px 16px rgba(106, 90, 205, 0.3); /* Purple shadow */
+}
+
+/* Input and button styles */
 input, button {
     width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 4px;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
     border: 1px solid #ddd;
     font-size: 16px;
 }
+
+/* Button hover styles */
 button {
-    background-color: #007bff;
+    background-color: #6A5ACD;
     color: white;
     border: none;
     cursor: pointer;
-}
-button:hover {
-    background-color: #0056b3;
+    transition: background-color 0.4s, box-shadow 0.4s;
 }
 
-p {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #007bff;
+/* Button hover effect */
+button:hover {
+    background-color: #483D8B; /* Darker purple */
+    box-shadow: 0 4px 16px rgba(72, 61, 139, 0.3);
 }
+
+/* Image styling */
+.image-class {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: block;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph text styling */
+p {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #6A5ACD; /* Soft purple for text */
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
     .container {
-        padding: 20px;
+        padding: 25px;
     }
     h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
     input, button {
         font-size: 14px;
